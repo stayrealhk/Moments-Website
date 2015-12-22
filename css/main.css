@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'museo500';
+  src: url('/assets/Museo500-Regular-webfont.eot');
+  src: url('/assets/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/Museo500-Regular-webfont.woff2') format('woff2'),
+       url('/assets/Museo500-Regular-webfont.woff') format('woff'),
+       url('/assets/Museo500-Regular-webfont.ttf') format('truetype'),
+       url('/assets/Museo500-Regular-webfont.svg#museo500') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background: #000;
@@ -13,13 +25,13 @@ video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background: url('/assets/moments.jpg') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
 
 #moments {
-  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-family: museo500 sans-serif;
   font-weight:100;
   color: white;
   width: 33%;
@@ -63,6 +75,6 @@ h1 {
 }
 
 @media screen and (max-device-width: 800px) {
-  html { background: url(assets/moments.jpg) #000 no-repeat center center fixed; }
+  html { background: url(/assets/moments.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
