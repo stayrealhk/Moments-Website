@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Moments Movie - Capture Memories with Ease, Share with Love</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/css/foundation.min.css">
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -12,27 +13,76 @@
     <div class="section">
       <video autoplay poster="assets/moments.jpg" id="bgvid" loop>
         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-        <source src="assets/moments.webm" type="video/webm">
         <source src="assets/moments.mp4" type="video/mp4">
       </video>
 
-      <div class="page-wrap">
-        <div id="moments">
-          <h1>Moments</h1>
-          <p>Capture Memories with Ease</p>
-          <p>Share with Love</p>
-          <button>Download</button>
+      <div id="moments">
+        <img src="assets/Launch.png" />
+        <h1>Moments</h1>
+        <p>Capture Memories with Ease</p>
+        <p>Share with Love</p>
+        <button>Sign up for Beta</button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row">
+        <div class="small-7 columns">
+          <img src="assets/iPhone.png" />
+        </div>
+        <div class="small-5 columns">
+          <h2>Record</h2>
+          <p>Start taking daily videos right inside the application.</p>
+          <p>Simple, Easy and Quick!</p>
+          <button class="warning hollow button">Sign up for Beta</button>
         </div>
       </div>
     </div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
+    <div class="section">
+      <div class="row">
+        <div class="small-5 columns">
+          <h2>Playback</h2>
+          <p>Instant Preview after recording.</p>
+          <p>Retake another one without hassle</p>
+          <button class="warning hollow button">Sign up for Beta</button>
+        </div>
+        <div class="small-7 columns">
+          <img src="assets/iPhone.png" />
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row">
+        <div class="small-7 columns">
+          <img src="assets/iPhone.png" />
+        </div>
+        <div class="small-5 columns">
+          <h2>Edit</h2>
+          <p>Choose the favorite clip of the day.</p>
+          <p>It is never so intuitive before.</p>
+          <button class="warning hollow button">Sign up for Beta</button>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="row">
+        <div class="small-6 small-centered columns text-center">
+          <div>
+            <img src="assets/Launch.png" />
+          </div>
+          <h2>Moments</h2>
+          <p>Start Capturing Memories</p>
+          <div class="download">
+            <img class="store" src="assets/appstore.png" />
+            Download the App!
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="full-width">
     <div class="row">
-      <div class="small-6 column">Make with Love</div>
-      <div class="small-6 column">Contact Us</div>
+      <div class="small-6 columns">Make with <span class="red">♥</span> <a href="http://www.stayrealhk.com">STAY REAL</a></div>
+      <div class="small-6 columns text-right">Contact Us</div>
     </div>
   </footer>
 </body>
@@ -41,11 +91,4 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/vendors/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-      navigation: true
-    });
-  });
-</script>
 </html>
