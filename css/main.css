@@ -60,7 +60,7 @@ h1 {
   font-size: 2rem;
 }
 
-.section button {
+.section .button {
   border-radius: 5px;
 }
 
@@ -82,7 +82,7 @@ h1 {
   line-height: 2rem;
 }
 
-#moments button {
+#moments .button {
   background: rgba(255,255,255,0.23);
   border: none;
   border-radius: 5px;
@@ -96,30 +96,31 @@ h1 {
   width: 60%;
 }
 
-#moments button:hover {
+#moments .button:hover {
    background: rgba(0,0,0,0.5);
 }
 
 .download {
-  width: 340px;
-  height: 53px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 5px;
   background-color: #F98100;
+  border-radius: 5px;
   color: white;
+  cursor: pointer;
+  display: block;
   font-size: 18px;
   font-weight: 300;
+  margin: 20px auto;
   line-height: 53px;
+  width: 340px;
+  height: 53px;
 }
 
 .store {
-  width: 145px;
-  height: 53px;
-  margin: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   float: left;
+  margin: 0;
+  width: 145px;
+  height: 53px;
 }
 
 footer {
@@ -130,6 +131,70 @@ footer {
   width: 100%;
   line-height: 2rem;
 }
+
+#email-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+}
+
+.email-form {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  left: 50%;
+  margin-left: -25%; }
+  .email-form h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0.05em;
+    padding-bottom: 0; }
+    .email-form h1 img {
+      width: 25px;
+      line-height: 10px;
+      vertical-align: -2px; }
+  .email-form .done {
+    display: none; }
+  .email-form .collapse {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px; }
+  .email-form input[type=email] {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-style: none;
+    text-align: center;
+    height: 50px;
+    margin: 0; }
+  .email-form button.signup {
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    color: white;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+  .email-form .form-message, .email-form .form-error {
+    padding: 0.5em 0;
+    color: white;
+    font-size: 1.2em; }
+  .email-form .form-error {
+    color: red; }
+  .email-form ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.9); }
+  .email-form :-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.9); }
+  .email-form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.9); }
+  .email-form :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.9); }
 
 #fp-nav span, .fp-slidesNav span {
   background: #F98100;

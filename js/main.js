@@ -1,31 +1,3 @@
-var vid = document.getElementById("bgvid");
-var pauseButton = document.querySelector("#moments button");
-
-
-function vidFade() {
-  vid.classList.add("stopfade");
-}
-
-vid.addEventListener('ended', function()
-{
-// only functional if "loop" is removed
-vid.pause();
-// to capture IE10
-vidFade();
-});
-
-
-pauseButton.addEventListener("click", function() {
-  vid.classList.toggle("stopfade");
-  if (vid.paused) {
-    vid.play();
-    pauseButton.innerHTML = "Pause";
-  } else {
-    vid.pause();
-    pauseButton.innerHTML = "Paused";
-  }
-})
-
 $(document).ready(function() {
   $('#fullpage').fullpage({
     navigation: true,
@@ -54,5 +26,21 @@ $(document).ready(function() {
         });
       }
     }
+  });
+
+  $('.beta').click(function() {
+    $('#email-modal').fadeIn();
+  });
+
+  $('#email-modal').click(function(e) {
+    e.preventDefault();
+    $(this).fadeOut();
+  });
+
+  $('input').click(function(e) {
+    return e.stopImmediatePropagation();
+  });
+  $('button').click(function(e) {
+    return e.stopImmediatePropagation();
   });
 });
