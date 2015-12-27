@@ -207,6 +207,11 @@ footer {
 }
 
 @media screen and (max-device-width: 800px) {
-  html { background: url(/assets/moments.jpg) #000 no-repeat center center fixed; }
+  #home {
+    background: url(/assets/moments.jpg) white no-repeat center center fixed;
+    content: "";
+    display: block;
+    height: 100%
+  }
   #bgvid { display: none; }
 }
