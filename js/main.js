@@ -45,9 +45,8 @@ $(document).ready(function() {
   });
 
   $('.email-form').submit(function(e) {
-    e.preventDefault();
+    // Use form to submit the actual action
     var email = $('.email-form .email').val();
-    console.log(email);
     ga('send', 'event', 'Beta', 'submit-form', email);
   });
   $('input').click(function(e) {
