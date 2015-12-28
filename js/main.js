@@ -1,3 +1,5 @@
+var currentPage = 1;
+
 $(document).ready(function() {
   $('#fullpage').fullpage({
     navigation: true,
@@ -5,6 +7,8 @@ $(document).ready(function() {
       if (index == 1) {
         $('#fp-nav span').css('backgroundColor', 'white');
       }
+      currentPage = index;
+      ga('send', 'event', 'Navigation', 'afterLoad', index);
     },
     onLeave: function(index, nextIndex) {
       if (nextIndex == 1) {
@@ -30,13 +34,22 @@ $(document).ready(function() {
 
   $('.beta').click(function() {
     $('#email-modal').fadeIn();
+    ga('send', 'pageview', 'beta-form');
+    ga('send', 'event', 'Beta', 'show-form', currentPage);
   });
 
   $('#email-modal').click(function(e) {
     e.preventDefault();
     $(this).fadeOut();
+    ga('send', 'event', 'Beta', 'hide-form', currentPage);
   });
 
+  $('.email-form').submit(function(e) {
+    e.preventDefault();
+    var email = $('.email-form .email').val();
+    console.log(email);
+    ga('send', 'event', 'Beta', 'submit-form', email);
+  });
   $('input').click(function(e) {
     return e.stopImmediatePropagation();
   });
