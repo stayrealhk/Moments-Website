@@ -231,3 +231,31 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media screen and (orientation:portrait) {
+  footer {
+    background-color: rgba(155,155,155,0.5) !important;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #moments {
+    width: 80%;
+  }
+  #moments h1 {
+    font-size: 4.5rem;
+  }
+  #moments p,
+  #moments .button {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .section p,
+  .section .button {
+    font-size: 2rem;
+  }
+  .small-5,
+  .small-7 {
+    width: 100%;
+    text-align: center;
+  }
+}
