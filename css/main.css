@@ -71,7 +71,7 @@ h1 {
   width: 33%;
   font-size: 2rem;
   position: fixed;
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -112,6 +112,19 @@ h1 {
   line-height: 53px;
   width: 340px;
   height: 53px;
+}
+
+#appstore {
+  width: 340px;
+  height: 53px;
+  display: block;
+  margin: 40px auto 50px auto;
+  border-radius: 5px;
+  background-color: #f98100;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 53px;
 }
 
 .store {
