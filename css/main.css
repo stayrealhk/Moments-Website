@@ -136,6 +136,10 @@ h1 {
   height: 53px;
 }
 
+.hollow .columns {
+  padding: 0 5px;
+}
+
 footer {
   /*background-color: #9B9B9B;*/
   color: white;
